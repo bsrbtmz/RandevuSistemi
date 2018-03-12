@@ -42,7 +42,6 @@ namespace Randevu_Sistemi
             }
         }
 
-
         private void butonKaydet_Click(object sender, EventArgs e)
         {
             ValidationManager validationManager = new ValidationManager();
@@ -69,29 +68,16 @@ namespace Randevu_Sistemi
             if (listView1.SelectedItems.Count > 0)
             {
                 randevu.doktor = new Doktor();
-                randevu.doktor.adSoyad=listView1.SelectedItems[0].SubItems[0].Text;
-                
+                randevu.doktor.adSoyad=listView1.SelectedItems[0].SubItems[0].Text;                
             }
-            RandevuList.randevuListe.Add(randevu);
-
             
+            RandevuList.randevuListe.Add(randevu);            
         }
 
         private void RandevuForm_Load(object sender, EventArgs e)
         {
             label5.Text = kullaniciList.aktifKullanici.ad +" "+ kullaniciList.aktifKullanici.soyad;
         }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void butonCikis_Click(object sender, EventArgs e)
         {
             UyeForm uyeform = new UyeForm();
