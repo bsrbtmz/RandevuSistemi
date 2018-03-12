@@ -41,10 +41,5 @@ namespace Randevu_Sistemi
             f.Show();
             this.Hide();
         }
-
-        private void UyeForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
