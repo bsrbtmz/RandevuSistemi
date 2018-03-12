@@ -42,10 +42,7 @@ namespace Randevu_Sistemi
                     string[] s = { item.kullanici.ad, item.kullanici.soyad, item.randevuTarihi.ToShortDateString(), item.rahatsizlik, item.doktor.adSoyad };
                     listView1.Items.Add(new ListViewItem(s));
                 }
-            }
-            {
-
-            }
+            }            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,11 +58,6 @@ namespace Randevu_Sistemi
                 uye.Show();
             }
             this.Hide();
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+        }       
     }
 }
