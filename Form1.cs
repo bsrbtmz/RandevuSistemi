@@ -23,7 +23,6 @@ namespace Randevu_Sistemi
                 Kullanici adminUser = new Kullanici { kullaniciAdi = "admin", sifre = "1234", isAdmin = true };
                 kullaniciList.kullaniciListe.Add(adminUser);
             }
-
         }
         
         private void butonGiriş_Click(object sender, EventArgs e)
@@ -53,30 +52,25 @@ namespace Randevu_Sistemi
                     giris = true;
                     break;
                 }
-
             }
             if (giris)
             {
                 if (kullaniciList.aktifKullanici.isAdmin)
                 {
                     AdminForm adminForm = new AdminForm();
-                    adminForm.Show();
-                    
+                    adminForm.Show();                    
                 }
                 else
                 {
                     UyeForm uyeForm = new UyeForm();
-                    uyeForm.Show();
-                   
+                    uyeForm.Show();                   
                 }
                 this.Hide();
             }
-
             else
             {
                 MessageBox.Show("Hatalı Giriş yaptınız.");
             }
-
         }
 
         private void butonUyeOl_Click(object sender, EventArgs e)
@@ -84,11 +78,6 @@ namespace Randevu_Sistemi
             UyeOlForm uyeOlForm = new UyeOlForm();
             uyeOlForm.Show();
             this.Hide();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-           
         }
     }
 }
