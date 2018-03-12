@@ -49,13 +49,7 @@ namespace Randevu_Sistemi
             kullanici.sifre = textSifre.Text;
 
             kullaniciList.kullaniciListe.Add(kullanici);
-        
-        //kullaniciListe.Add(kullanici);
-
         }
-
-        
-
         private void butonGiris_Click(object sender, EventArgs e)
         {
             Form1 form = new Form1();
